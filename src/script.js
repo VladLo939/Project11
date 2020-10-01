@@ -25,7 +25,7 @@ import '../src/pages/index.css';
 
   const { yourname, job } = editForm.elements;
 
-  const API_URL = NODE_ENV === 'production' ? 'https' : 'http';
+  const API_URL = NODE_ENV === 'production' ? 'http' : 'https';
 
   const config = {
     url: `${API_URL}://nomoreparties.co/cohort12`,
