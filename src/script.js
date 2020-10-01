@@ -120,7 +120,6 @@ import '../src/pages/index.css';
   api.getCardsData()
     .then((res) => { 
     const initCards = res.map(cardData => {
-      console.log(cardData)
       const card = new Card(cardData.name, cardData.link)
       let cardElement = card.createCard();
       card.setEventListener(cardElement);
