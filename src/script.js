@@ -81,6 +81,7 @@ import '../src/pages/index.css';
     const { name, link } = userForm.elements;
     const card = new Card (name.value, link.value)
 
+    const cardList = new CardList(placesList, card)
     cardList.addCard(card.createCard())
     popupUser.close()
   })
